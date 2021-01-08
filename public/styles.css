@@ -1,0 +1,11 @@
+html{
+    color: white; 
+    background-color: darkslategrey;
+}
+
+#whenSignedOut{
+    display: flex; 
+    justify-content: right; 
+    text-align: right; 
+    margin-right: 50%; 
+}
