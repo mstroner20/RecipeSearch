@@ -42,18 +42,20 @@
 
 </head>
 <body>
-    <h1>MyApp</h1>
-    <div class>
+    <h1>What's For Dinner</h1>
+    <div class="SignedOut">
         <section id="whenSignedOut">
-            <button id="signInBtn">Sign in with Google</button>
+            <button id="signInBtn" hidden = "false">Sign in with Google</button>
         </section>
     </div>
     
 
     <section id="whenSignedIn" hidden = "true">
-        <div id = "userDetails"></div>
-        <button id="signOutBtn">Sign Out</button><br>
-        <br>
+        
+        <div class = "signOutButton">
+        <button id="signOutBtn">Sign Out</button>
+        </div>
+        
         <input type="number" id = "quant" min = "1" max="100" value = "1">
         <input type="text" id="itemTB">
         <button id=addItem>Add Item</button>
@@ -61,11 +63,13 @@
         <h3>Items:</h3>
         
 
-        <ul id="thingsList">
+        <ul id="thingsList"></ul>
 
-        </ul>
 
     </section>
+    <br>
+    <br>
+    <button id="recipesBttn" hidden="true">Recipes</button>
    
 </body>
 </html>

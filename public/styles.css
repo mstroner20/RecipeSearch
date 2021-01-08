@@ -3,9 +3,16 @@ html{
     background-color: darkslategrey;
 }
 
-#whenSignedOut{
-    display: flex; 
-    justify-content: right; 
-    text-align: right; 
-    margin-right: 50%; 
+h1{
+    position: relative; 
+    text-align: center;
 }
+
+#whenSignedOut{
+    position: relative; 
+    text-align: center; 
+    
+
+    margin-top: 70px;
+}
+
