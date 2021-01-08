@@ -5,6 +5,8 @@ const whenSignedOut = document.getElementById('whenSignedOut');
 
 const signInBtn =  document.getElementById('signInBtn');
 const signOutBtn = document.getElementById('signOutBtn');
+const recipeBtn = document.getElementById('recipesBtn');
+
 const addItemBtn = document.getElementById('addItem');
 
 
@@ -21,14 +23,18 @@ auth.onAuthStateChanged( user => {
     if(user){
         whenSignedIn.hidden = false; 
         whenSignedOut.hidden = true; 
+        recipeBtn.hidden = false; 
         signInBtn.hidden = true;
         userDetails.innerHTML = `<h3>Hello ${user.displayName}!</h3>`
+        
+        
 
     } else{
         whenSignedIn.hidden = true; 
         whenSignedOut.hidden = false; 
         signInBtn.hidden = false;
         userDetails.innerHTML = '';
+        recipeBtn.hidden = true;
     }
 });
 
