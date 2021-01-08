@@ -21,11 +21,13 @@ auth.onAuthStateChanged( user => {
     if(user){
         whenSignedIn.hidden = false; 
         whenSignedOut.hidden = true; 
+        signInBtn.hidden = true;
         userDetails.innerHTML = `<h3>Hello ${user.displayName}!</h3>`
 
     } else{
         whenSignedIn.hidden = true; 
         whenSignedOut.hidden = false; 
+        signInBtn.hidden = false;
         userDetails.innerHTML = '';
     }
 });
