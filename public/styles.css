@@ -30,9 +30,15 @@ h1{
 }
 
 ul, li{
-    position: relative;
-    text-align: center;
-
+    
+    text-align: left; 
     list-style: none; 
+    
+}
+.list{
+    display: flex; 
+    justify-content: center; 
+    text-align: center; 
+
     
 }

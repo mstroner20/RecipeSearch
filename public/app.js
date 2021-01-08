@@ -79,7 +79,7 @@ auth.onAuthStateChanged( user => {
 
                 const items = querySnapshot.docs.map(doc => {
 
-                    return `<li>${ doc.data().quantity + "  " + doc.data().name  }</li>`
+                    return `<li>${ doc.data().quantity + "     " + doc.data().name  }</li>`
 
                 });
                 
