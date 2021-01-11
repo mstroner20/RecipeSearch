@@ -11,7 +11,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
     <script src="/__/firebase/8.2.1/firebase-auth.js"></script>
     <script src="/__/firebase/8.2.1/firebase-firestore.js"></script>
-    <script src="recipeApi.js"></script>
+    <script src="recipes.js"></script>
    
     
    
@@ -69,10 +69,19 @@
         <ul id="thingsList"></ul>
         </div>
 
-        <button id="recipeBtn" >Recipes</button>
+        <button id="recipeBtn" onClick = "getRecipesFromIngredients()">Recipes</button>
 
 
     </section>
+    <section>
+        <div class="recipeImages">
+            <div id="image">
+
+            </div>
+            
+        </div>
+    </section>
+
     
     
    

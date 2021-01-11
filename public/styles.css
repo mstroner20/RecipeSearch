@@ -38,7 +38,10 @@ ul, li{
 .list{
     display: flex; 
     justify-content: center; 
-    text-align: center; 
+    text-align: center;  
+}
 
-    
+.recipeImages{
+    display: flex;
+    flex-direction: column; 
 }
