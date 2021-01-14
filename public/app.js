@@ -79,12 +79,12 @@ auth.onAuthStateChanged( user => {
 
                 const items = querySnapshot.docs.map(doc => {
 
-                    return `<li>${ doc.data().quantity + "     " + doc.data().name  }</li>`
+                    return `<li>${ doc.data().quantity + "     " + doc.data().name  }<input type = "checkbox" class = "${doc.data().name}"id="selectedItem"></li>`
 
                 });
                 
                 items.reverse();
-                console.log(items);
+                //console.log(items);
                 thingsList.innerHTML = items.join('');
                 
 
