@@ -44,34 +44,41 @@ ul, li{
 }
 
 #recipeImages{
+    
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    align-items:center;
+    justify-content: center; 
+    
+    
+
 
      
-    align-items:center;
+    
      
 }
 
 #recipeImages img{
   
-    width: 100%; 
+      
     border: solid black 5px; 
+    width: 95%; 
 
-    display: inline-block; 
+    
 
   
 }
 
 #selectedItem{
     margin-left: 150px; 
-    
     float: right; 
+    
 }
 
 a{
     color: white; 
 
-    font-size: 25px; 
+    
 
     
 

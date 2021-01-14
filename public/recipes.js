@@ -1,4 +1,19 @@
+
+
 var finalURL = '';
+var clicked = 0; 
+
+function recipeClicked(){
+    clicked+=1;
+    if(clicked % 2 == 0){
+        //remove js and re display
+        removeOldDiv(); 
+        getSelectedRecipes(); 
+    }
+    else{
+        getSelectedRecipes();
+    }
+}
 
 function getSelectedRecipes(){
     let ingredientsArr = [];
@@ -47,6 +62,7 @@ function createFetchLink(arr){
 
     finalURL = fetchURL;
     console.log(finalURL);
+    getRecipesFromIngredients();
     
      
 }
@@ -57,7 +73,7 @@ function createFetchLink(arr){
 function getRecipesFromIngredients(){
 
 
-getSelectedRecipes();
+
 
 var data;
 
@@ -93,6 +109,7 @@ function printData(data){
         var lineBreak = document.createElement("br");
 
         newDiv.id = "newImgDiv";
+        newDiv.className = "recipeImg";
         
         elem.src = data[i].image;
 
@@ -104,16 +121,22 @@ function printData(data){
         
         document.getElementById("recipeImages").appendChild(newDiv);
         document.getElementById("newImgDiv").appendChild(elem);
+        
         document.getElementById("newImgDiv").appendChild(link);
         document.getElementById("newImgDiv").appendChild(lineBreak);
+        document.getElementById("newImgDiv").appendChild(lineBreak);
+        
         
     }
+}
 
-    
-    
-
-    
-
+function removeOldDiv(){
+    var old = document.getElementsByClassName("recipeImg");
+    for(var i = 0; i < 5; i++){
+        old[i].remove();
+        console.log(old[i]);
+    }
+   
 }
 
 /*
