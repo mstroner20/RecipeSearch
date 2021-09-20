@@ -1,4 +1,4 @@
-![GitHub top language](https://img.shields.io/github/languages/top/mstroner20/RecipeSearch?style=flat-square)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 
 # RecipeSearch
 
